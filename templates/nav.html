@@ -1,0 +1,44 @@
+{{define "nav"}}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li>
+                    <a href="/sending_profiles">Usuários</a>
+                </li>
+                <li> <a href="/templates">Emails</a>
+                </li>
+                <li>
+                    <a href="/landing_pages">Websites</a>
+                </li>
+                <li>
+                    <a href="/groups">Grupos</a>
+                </li>
+                <li>
+                    <a href="/campaigns">Campanhas</a>
+                </li>
+                <li>
+                    <a href="/">Analytics</a>
+                </li>
+                <li>
+                    <a href="/settings">Configurações</span></a>
+                </li>
+                {{if .ModifySystem}}
+                <li>
+                    <a href="/users">Permissões<span class="nav-badge badge pull-right">Admin</span></a>
+                </li>
+                <li>
+                    <a href="/webhooks">Integrações<span class="nav-badge badge pull-right">Admin</span></a>
+                </li>
+                {{end}}
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <a href="/">DPOaaS</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{{end}}
