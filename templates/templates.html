@@ -37,7 +37,7 @@
 <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <!-- New Template Modal -->
+            <!-- New Templat Modal -->
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="dismiss()"><span
                         aria-hidden="true">&times;</span></button>
@@ -47,7 +47,7 @@
                 <div class="row" id="modal.flashes"></div>
                 <label class="control-label" for="name">Nome:</label>
                 <div class="form-group">
-                    <input type="text" class="form-control" ng-model="template.name" placeholder="Template name" id="name"
+                    <input type="text" class="form-control" ng-model="template.name" placeholder="Nome do template" id="name"
                         autofocus />
                 </div>
                 <div class="form-group">
@@ -57,11 +57,11 @@
                 </div>
                 <label class="control-label" for="envelope-sender">Email de retorno: <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="Este remetente é mostrado para a maioria dos receptores dos emails e serve para receber as mensagens de erro ou devolução."></i></label>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="First Last <test@example.com>" id="envelope-sender" />
+                    <input type="text" class="form-control" placeholder="Nome e sobrenome <teste@exemplo.com.br>" id="envelope-sender" />
                 </div>
                 <label class="control-label" for="subject">Assunto:</label>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Email Subject" id="subject" />
+                    <input type="text" class="form-control" placeholder="Assunto do email" id="subject" />
                 </div>
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
@@ -71,7 +71,7 @@
                 <!-- Tab panes -->
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="text">
-                        <textarea rows="10" id="text_editor" class="gophish-editor form-control" placeholder="Plaintext"></textarea>
+                        <textarea rows="10" id="text_editor" class="gophish-editor form-control" placeholder="Olá!"></textarea>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="html">
                         <textarea id="html_editor"></textarea>
@@ -79,7 +79,7 @@
                 </div>
                 <div class="checkbox checkbox-primary">
                     <input id="use_tracker_checkbox" type="checkbox" checked>
-                    <label for="use_tracker_checkbox">Adicionar rastreio na imagem</label>
+                    <label for="use_tracker_checkbox">Notificar visualização da imagem</label>
                 </div>
                 <span class="btn btn-danger btn-file"><i class="fa fa-plus"></i> Adicionar arquivos
                     <input id="attachmentUpload" type="file" onchange="attach(this.files)" multiple>
